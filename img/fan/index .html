@@ -188,7 +188,7 @@
 
 
 </q>
-        <audio src="mi.mp3" c autoplay="autoplay"  loop ></audio>
+        <audio src="mi.mp3" c autoplay="autoplay"  loop id="bg-music" ></audio>
     </div>
 
     <!--
@@ -399,6 +399,16 @@
 if ("ontouchstart" in document.documentElement) { 
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
+    document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('bg-music');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
 </script>
 
 <!--
