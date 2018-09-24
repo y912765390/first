@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.video1{
+		width: 600px;
+		display: block;
+		margin:0 400px;
+	}
+		.controls{
+			width: 600px;
+			height: 40px;
+			border:1px solid black;
+			margin: 0 400px;
+		    position: relative;
+		    background-color: red;
+		}
+		ul{ 
+			margin-top: 3px;
+			position: absolute;
+			
+		}
+		ul li{
+			list-style-type: none;
+			width: 30px;
+			display: none;
+		}
+	    #ul1 .show{
+			display: block;
+		}
+		#time{
+			margin-left:50px;
+			margin-top: 16px;
+			width: 400px;
+			height: 2px;
+			border-radius: 1px;
+			background-color: #ccc;
+			position: relative;
+		}
+		#move{
+			width: 10px;
+			height: 10px;
+			border-radius: 50% 50%;
+			background-color: black;
+			position: absolute;
+			top: -2.5px;
+			left: 0px;
+		}
+		.span{
+			position: absolute;
+			top: 5px;
+			left: 540px;
+		}
+	</style>
+</head>
+<body>
+<div  class="video1" >
+	<video autobuffer  loop controls  width="600px" id="video2" >
+		<source src="20170117_113209.mp4">
+	</video>
+</div>
+	
+	 <div class="controls">
+	 	<ul class="ul1" id="ul1">
+	 		<li class="show"><a href="#" title=""><img src="play.png" alt=""></a></li>
+	 		<li><a href="#" title=""><img src="pause.png" alt=""></a></li>
+	 	</ul>
+        <div id="time">
+        	<div id="move">	
+        	</div>
+        </div>
+        <span   class="span"></span>
+	 </div>
+
+
+	 <script type="text/javascript"  src="jquery.min.js"></script>
+	 <script type="text/javascript">
+	     var n=1
+	     var oVideo=document.getElementById("video2")
+	     var oBtn1=document.getElementById("showtime")
+	 	$("ul").click(function(){
+          if (n==1) {
+          	oVideo.play()
+          	n=-n
+          	$("li").removeClass()
+          	$("li:eq(1)").addClass("show")
+          }
+          else{
+          	oVideo.pause()
+          	n=-n
+          	$("li").removeClass()
+          	$("li:eq(0)").addClass("show")
+          }
+          }
+	 	)
+          function aotumove(){
+          	var m=oVideo.currentTime
+          	var b=oVideo.duration
+          	var a=b/400
+          	var d
+          	var e
+           	$("#move").css({"left":m/a+"px",})
+           	d=Math.floor(m/60)
+           	e=Math.floor(m%60)
+            if (e<10&&d<10) {}
+           	$(".span").html("0"+d+":"+"0"+e)
+            if (e>=10&d<10) {
+            		$(".span").html("0"+d+":"+e)
+            }
+            if (e<10&&d>=10) {
+            		$(".span").html(+d+":"+"0"+e)
+            }
+            if (e>=10&&d>=10) {
+            		$(".span").html(+d+":"+e)
+            }
+          }
+          $("#time").click(function(event){
+          	var x=event.pageX
+          	var y=event.pageY
+          	var c
+          	var m
+          	$("#move").css({"left":x-450+"px"})
+          	c=x-450
+           
+            m=oVideo.duration
+            oVideo.currentTime=c*m/400
+          })
+          setInterval(aotumove,10)
+          $(".span").html()
+	 </script>
+</body>
+</html>
