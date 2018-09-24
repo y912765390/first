@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+	body{
+		background-color: #ccc
+	}
+	.box{
+		width: 550px;
+		height: 334px;
+		border:1px solid red ;
+		margin: 0 auto;
+		background-image: url(bbb.jpg);
+		background-size: 100% 100%
+	}
+	.box .xing {  
+	
+    display: block;  
+    width: 4px;  
+    height: 4px;  
+    border-radius: 50%;
+    background-color: #fff;  
+    top: 30px;  
+    left: 350px;  
+    position: relative;  
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+   /* opacity: 0;*/
+   animation:mymove 6s infinite;
+} 
+   .box .xing1 {  
+	
+    display: block;  
+    width: 4px;  
+    height: 4px;  
+    border-radius: 50%;
+    background-color: orange;  
+    top: 40px;  
+    left: 260px;  
+    position: relative;  
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+   /* opacity: 0;*/
+   animation:mymove 4s infinite;
+}
+  .box .xing2{  
+	
+    display: block;  
+    width: 4px;  
+    height: 4px;  
+    border-radius: 50%;
+    background-color: yellow;  
+    top: 37px;  
+    left: 380px;  
+    position: relative;  
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+   /* opacity: 0;*/
+   animation:mymove 8s infinite;
+}
+.box .xing3{  
+	
+    display: block;  
+    width: 4px;  
+    height: 4px;  
+    border-radius: 50%;
+    background-color: #fff;  
+    top: 40px;  
+    left: 280px;  
+    position: relative;  
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+   /* opacity: 0;*/
+   animation:mymove 5s infinite;
+}
+   .xing:after{
+   	content: "";
+   	display: block;  
+    top: 0px;  
+    left: 10px;  
+    border: 0px solid #fff;  
+    border-width:1.5px 10px 2px 90px;  
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);  
+    transform: rotate(-45deg) translate3d(0px, 1.5px, 0);  
+    transform-origin: 0% 0%; 
+   }
+   .xing1:after{
+   	content: "";
+   	display: block;  
+    top: 0px;  
+    left: 10px;  
+    border: 0px solid #fff;  
+    border-width:1.5px 10px 2px 90px;  
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);  
+    transform: rotate(-45deg) translate3d(0px, 1.5px, 0);  
+    transform-origin: 0% 0%; 
+   }
+   .xing2:after{
+   	content: "";
+   	display: block;  
+    top: 0px;  
+    left: 10px;  
+    border: 0px solid #fff;  
+    border-width:1.5px 10px 2px 90px;  
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);  
+    transform: rotate(-45deg) translate3d(0px, 1.5px, 0);  
+    transform-origin: 0% 0%; 
+   }
+   .xing3:after{
+   	content: "";
+   	display: block;  
+    top: 0px;  
+    left: 10px;  
+    border: 0px solid #fff;  
+    border-width:1.5px 10px 2px 90px;  
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);  
+    transform: rotate(-45deg) translate3d(0px, 1.5px, 0);  
+    transform-origin: 0% 0%; 
+   }
+   @keyframes mymove
+{
+ 0% {  
+        opacity: 0;  
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);  
+    }  
+    50% {  
+        opacity: 1;  
+        transform: scale(1) rotate(0) translate3d(-150px, 150px, 0);  
+    }  
+   100% {  
+        opacity: 0;  
+        transform: scale(1) rotate(0) translate3d(-300px, 240px, 0);  
+    } 
+}
+	</style>
+</head>
+<body>
+<div  class="box">
+	
+ <div class="xing">	
+ </div>
+  <div class="xing1">	
+ </div>	
+  <div class="xing2">	
+ </div>
+  <div class="xing3">	
+ </div>
+ </div>
+
+	<script type="text/javascript src="jquery.min.js" "></script>
+	
+
+</body>
+</html>
