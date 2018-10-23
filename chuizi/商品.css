@@ -1,0 +1,7 @@
+.goods3 div:hover{
+      box-shadow: 0px 0px  6px 10px #f6f6f6 inset;
+      transform: translateY(0.5px);
+}
+.goods3 .ul:hover{
+	  transform: translateY(0px);
+}
