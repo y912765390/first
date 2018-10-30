@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+	<div class="navbar  navbar-inverse" >
+		<div class="container  one">
+		   <div class="navbar-header">
+		   	 <a href="#" class="navbar-brand">Photo <span>Art</span></a>
+		   </div>
+			<ul class="nav  navbar-nav">
+				<li class=""><a href="index.html" class="active" >Home </a></li>
+				<li class=""><a href="about.html">About </a></li>
+				<li class=""><a href="privacy.html">Privacy</a></li>
+				<li class=""><a href="gallery.html">Gallery</a></li>
+				<li class=""><a href="contact.html">Contact</a></li>
+				<li class=""><a href="sitemap.html">Sitemap</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container-fluid container-top">
+		 <div class="container">
+		 	<div class="buttonGroup">
+      <button type="button" class="btn btn-default btn-active" >Categpry1</button>
+      <button type="button" class="btn btn-default">Categpry2</button>
+      <button type="button" class="btn btn-default">Categpry3</button>
+       <button type="button" class="btn btn-default">Categpry4</button>
+        <button type="button" class="btn btn-default">Categpry5</button>
+            </div>
+     </div>        
+    <div class="container container-inner">
+             <ul class="left1">
+            	<li></li>
+            	<li></li>
+            	<li></li>
+            </ul>
+            <div class="picture">
+            	
+            </div>
+    </div>
+     <div class="container container-bottom">
+         <ul class="container-bottom-ul">
+           		<li class="left">
+           			
+            		<h1>My Clients:</h1> 
+                     <ul id="ul">
+                     	<li><a href="#">Sed ut perspiciatis</a></li>
+                     	<li><a href="#">Unde omnis iste</a></li>
+                     	<li><a href="#">Natus error sit volup</a></li>
+                     	<li><a href="#">Tatem accusantium</a></li>
+                     </ul>
+                    <img src="images/extra-img.png" alt="">
+           		</li>
+           		<li class="right" id="right">
+           			<h1>About Photo:</h1>
+                <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip . eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia desetium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                <p class="p2">Quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  <span>consequuntur magni</span> dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+           		</li>
+         </ul>  	
+     </div>      
+		
+	</div>
+	<div class="foot">
+		<p>Website template designed by<span>www.templatemonster.com</span></p>
+		<p>3D Models provided by<span>www.templates.com</span></p>
+	</div>
+
+
+
+       
+
+       <script type="text/javascript"  src="jquery.min.js"></script>
+       <script type="text/javascript">
+       	$(".btn:eq(0)").click(function(){
+       		$(".btn").removeClass("btn-active")
+       		$(this).addClass("btn-active")
+            $(".left1 li:eq(0)").css("background-image","url(images/slide1-1.jpg)")
+             $(".left1 li:eq(1)").css("background-image","url(images/slide1-2.jpg)")
+              $(".left1 li:eq(2)").css("background-image","url(images/slide1-3.jpg)")
+       		})
+       	$(".btn:eq(1)").click(function(){
+       		$(".btn").removeClass("btn-active")
+       		$(this).addClass("btn-active")
+            $(".left1 li:eq(0)").css("background-image","url(images/slide2-1.jpg)")
+             $(".left1 li:eq(1)").css("background-image","url(images/slide2-2.jpg)")
+              $(".left1 li:eq(2)").css("background-image","url(images/slide2-3.jpg)")
+       		})
+       	$(".btn:eq(2)").click(function(){
+       		$(".btn").removeClass("btn-active")
+       		$(this).addClass("btn-active")
+            $(".left1 li:eq(0)").css("background-image","url(images/slide3-1.jpg)")
+             $(".left1 li:eq(1)").css("background-image","url(images/slide3-2.jpg)")
+              $(".left1 li:eq(2)").css("background-image","url(images/slide3-3.jpg)") 
+       		})
+       	$(".btn:eq(3)").click(function(){
+       		$(".btn").removeClass("btn-active")
+       		$(this).addClass("btn-active")
+            $(".left1 li:eq(0)").css("background-image","url(images/slide4-1.jpg)")
+             $(".left1 li:eq(1)").css("background-image","url(images/slide4-2.jpg)")
+              $(".left1 li:eq(2)").css("background-image","url(images/slide4-3.jpg)") 
+       		})
+       	$(".btn:eq(4)").click(function(){
+       		$(".btn").removeClass("btn-active")
+       		$(this).addClass("btn-active")
+            $(".left1 li:eq(0)").css("background-image","url(images/slide5-1.jpg)")
+             $(".left1 li:eq(1)").css("background-image","url(images/slide5-2.jpg)")
+              $(".left1 li:eq(2)").css("background-image","url(images/slide5-3.jpg)")
+       		})
+        $(".left1 li:eq(0)").click(function(){
+        	var url=$(this).css("background-image")
+        	var src=url.substring(74,93)
+        	
+        		if (src=="images/slide1-1.jpg") {
+        			$(".picture").css("background-image","url(images/slide1-1big.jpg)")
+        		}
+        		if (src=="images/slide2-1.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide2-1big.jpg)")
+        		}
+        		if (src=="images/slide3-1.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide3-1big.jpg)")
+        		}
+        		if (src=="images/slide4-1.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide4-1big.jpg)")
+        		}
+        		if (src=="images/slide5-1.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide5-1big.jpg)")
+        		}
+        	
+        })
+
+        $(".left1 li:eq(1)").click(function(){
+        	var url=$(this).css("background-image")
+        	var src=url.substring(74,93)
+        	
+        		if (src=="images/slide1-2.jpg") {
+        			$(".picture").css("background-image","url(images/slide1-2big.jpg)")
+        		}
+        		if (src=="images/slide2-2.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide2-2big.jpg)")
+        		}
+        		if (src=="images/slide3-2.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide3-2big.jpg)")
+        		}
+        		if (src=="images/slide4-2.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide4-2big.jpg)")
+        		}
+        		if (src=="images/slide5-2.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide5-2big.jpg)")
+        		}
+        	
+        }) 
+             $(".left1 li:eq(2)").click(function(){
+        	var url=$(this).css("background-image")
+        	var src=url.substring(74,93)
+        	
+        		if (src=="images/slide1-3.jpg") {
+        			$(".picture").css("background-image","url(images/slide1-3big.jpg)")
+        		}
+        		if (src=="images/slide2-3.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide2-3big.jpg)")
+        		}
+        		if (src=="images/slide3-3.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide3-3big.jpg)")
+        		}
+        		if (src=="images/slide4-3.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide4-3big.jpg)")
+        		}
+        		if (src=="images/slide5-3.jpg") {
+        		
+        			$(".picture").css("background-image","url(images/slide5-3big.jpg)")
+        		}
+        	
+        })
+        $(".navbar-nav li a").removeClass("active")
+       $(".navbar-nav li a:eq(3)").addClass("active")
+       </script>
+
+     
+
+
+</body>
+
+
+</html>
