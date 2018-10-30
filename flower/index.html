@@ -141,8 +141,8 @@ Sed perspiciatis unde</a><p>Nemo enim ipsam voluptatem quia voluptas aspernatur.
         $(".left1 li:eq(0)").click(function(){
        
         	var url=$(this).css("background-image")
-        	var src=url.substring(48,67)
-        	
+        	var src=url.substring(44,63)
+        	console.log(src)
         		if (src=="images/slide1-1.jpg") {
         			$(".picture").css("background-image","url(images/slide1-1big.jpg)")
         		}
@@ -167,7 +167,7 @@ Sed perspiciatis unde</a><p>Nemo enim ipsam voluptatem quia voluptas aspernatur.
 
         $(".left1 li:eq(1)").click(function(){
         	var url=$(this).css("background-image")
-        	var src=url.substring(48,67)
+        	var src=url.substring(44,63)
         	console.log(url)
           console.log(src)
         		if (src=="images/slide1-2.jpg") {
@@ -193,7 +193,7 @@ Sed perspiciatis unde</a><p>Nemo enim ipsam voluptatem quia voluptas aspernatur.
         }) 
              $(".left1 li:eq(2)").click(function(){
         	var url=$(this).css("background-image")
-        	var src=url.substring(48,67)
+        	var src=url.substring(44,63)
         	
         		if (src=="images/slide1-3.jpg") {
         			$(".picture").css("background-image","url(images/slide1-3big.jpg)")
