@@ -1,0 +1,35 @@
+{ 
+  "data":{"hospital":"北京人民医院",
+	"name":{"Name":"李易峰","age":"30","sex":"男"},
+	"date":"2018-01-02",
+	"pages":[{
+		               "imgUrl":"/static/img/3.png",
+                       "name":"处单方",
+                       "id":1,
+                       "drugs":[{"name":"爽歪歪胶囊爽胶囊爽胶囊爽胶囊爽歪歪胶囊爽歪歪胶囊爽歪歪胶囊","money":111,"id":"drugs_1"},
+                                {"name":"冻死人胶爽歪歪胶囊死人胶囊冻死人胶囊冻死人胶囊","money":211,"id":"drugs_2"},
+                                {"name":"花果山水帘洞帘洞帘洞帘洞帘洞帘洞美猴王花果山花果山","money":999,"id":"drugs_10"}]
+               },
+	        {
+		               "imgUrl":"/static/img/4.png",
+                       "name":"检查方",
+                        "id":2,
+                       "drugs":[{"name":"保定河北中国亚洲地球胶囊","money":11,"id":"drugs_4"},
+                  {"name":"聪明宝宝什么什么片","money":66,"id":"drugs_5"},
+                  {"name":"好孩子天天向上什么什么剂","money":66,"id":"drugs_6"}]
+	} ,
+	          {
+		 "imgUrl":"/static/img/5.png",
+         "name":"记录方",
+          "id":3,
+         "drugs":[{"name":"如意如意顺我心意止咳糖浆","money":22,"id":"drugs_7"},
+                  {"name":"清华预备班宝宝片","money":665,"id":"drugs_8"},
+                  {"name":"熊孩子胶囊","money":9,"id":"drugs_9"}]
+	} ]}
+	
+
+}
+
+
+
+
